@@ -19,13 +19,13 @@
   cd ./go_client_secret
 
 
-###Установка и сборка в режиме службы
+### Установка и сборка в режиме службы
 
   go build
 
   ./go_client_secret -Cert ./cert.pem -Key ./key.pem
 
-###Установка и сборка в режиме Docker
+### Установка и сборка в режиме Docker
 
   docker build -t go_client_secret -f Dockerfile .
   
