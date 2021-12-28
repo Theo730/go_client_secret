@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"encoding/json"
 	"net/http"
 	"github.com/julienschmidt/httprouter"
@@ -14,9 +15,10 @@ func HGetClientSecret(w http.ResponseWriter, r *http.Request, ps httprouter.Para
 	return
     }
 
-    w.Header().Set("Content-Type", "application/json; charset=utf-8")
-
     str, err		:= json.Marshal(out)
+    fmt.Printf("==>%v\n", out)
+
+    fmt.Printf("=>%s\n", string(str))
     if err != nil {
 	HOutHttpError(w, -3, err.Error(), r.RemoteAddr)
     }

@@ -16,8 +16,9 @@ import (
 )
 
 type OutURL struct{
-    ClientSecret	string		`json:"client_secret"`  // 
+    ClientSecret	string		`json:"client_secret"`  // подписанная строка
     State		string		`json:"state"`     // state клиента (уникальный номер сессии клиента)
+    Data		string		`json:"data"`     // data
 }
 
 type esia struct{
