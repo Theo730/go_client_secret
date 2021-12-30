@@ -27,6 +27,7 @@ func main() {
     router := httprouter.New()
     router.GET("/api/v1/getClientSecret", HGetClientSecret)
 
+
     if len(Esia.Interface) > 1{
 	strInterface	= fmt.Sprintf("%s:%d", Esia.Interface, Esia.Port)
     }else{

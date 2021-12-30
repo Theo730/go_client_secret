@@ -9,10 +9,8 @@ import (
     crand	"crypto/rand"
     "time"
     "github.com/Theo730/pkcs7"
-    "github.com/pedroalbanese/gogost/gost3410"
-    "github.com/pedroalbanese/gogost/gost34112012256"
-//    "go.cypherpunks.ru/gogost/v5/gost3410"
-//    "go.cypherpunks.ru/gogost/v5/gost34112012256"
+    "github.com/Theo730/gogost/gost3410"
+    "github.com/Theo730/gogost/gost34112012256"
 )
 
 type OutURL struct{
